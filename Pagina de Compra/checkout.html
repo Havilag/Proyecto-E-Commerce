@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>checkout</title>
+</head>
+
+<body>
+    <header class="header-title">
+        <h2>FEAR OF GOD</h2>
+        <a href="../Pagina%20Principal/index.html" class="return-link">← Return to the store</a>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <form class="form-container">
+                <div class="form-contacto">
+                    <h3>Contacto</h3>
+                    <input class="main-email" name="email" placeholder="ejemplo@mail.com" required>
+                    <div class="form-checkout">
+                        <input type="checkbox">
+                        <p>Email me with news and offers</p>
+                    </div>
+                </div>
+
+                <div class="form-delivery">
+                    <h3>Delivery</h3>
+                    <select class="form-countries" required>
+                        <option value="" disabled selected>Selecciona tu ciudad</option>
+                    </select>
+                    <div class="form-row">
+                        <input type="text" name="first-name" placeholder="First Name: e.g. Hector" required>
+                        <input type="text" name="last-name" placeholder="Last Name: e.g. Avila" required>
+                    </div>
+                    <div class="form-inputs">
+                        <input type="text" name="company" placeholder="Company Name (optional)">
+                        <input type="text" name="address" placeholder="Street Address: e.g. Los Flamencos A2" required>
+                        <input type="text" name="apartment" placeholder="Apartment,unit,etc.(optional)">
+                        <input type="tel" name="phone" placeholder="Phone Number: e.g. 999999999" required>
+                    </div>
+                </div>
+
+                <div class="payment-form">
+                    <h3>Payment</h3>
+                    <div class="payment-box">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <input type="radio" id="card-option">
+                                <span>Credit or Debit Card</span>
+                            </div>
+                            <div class="card-icons">
+                                <span class="badge">VISA</span>
+                                <span class="badge">MC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <input type="text" name="card-number" placeholder="Card Number" inputmode="numeric"
+                            pattern="[0-9]*" maxlength="16" required disabled>
+                        <div class="form-row-card">
+                            <input type="text" name="expiry-date" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" maxlength="5" placeholder="Expiration Date (MM/YY)" required disabled>
+                            <input type="text" name="cvv" pattern="[0-9]*" maxlength="3" placeholder="CVV" maxlength="4" required disabled>
+                        </div>
+                        <input type="text" name="card-holder" placeholder="Cardholder Name" required disabled>
+                    </div>
+
+                    <div class="form-checkout">
+                        <input type="checkbox">
+                        <p>Use shipping address as billing address</p>
+                    </div>
+                </div>
+                <button type="submit" class="pay-now">Pay Now</button>
+            </form>
+
+
+
+            <div class="main-checkout">
+
+                <div id="checkout-items"></div>
+
+                <div class="discount">
+                    <input type="text" placeholder="Discount code or gift card">
+                    <button>Apply</button>
+                </div>
+
+                <div class="price-detail">
+                    <p>Subtotal <span id="subtotal">0</span></p>
+                    <p>shipping <span id="shipping">0</span></p>
+                    <p>Taxes <span id="taxes">0</span></p>
+                </div>
+
+                <div class="total">
+                    <h4>Total <span id="total">0</span></h4>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-image">
+                <img src="./assets/Tienda.jpg" class="footer-store">
+            </div>
+            <div class="footer-nav">
+                <h4>Sobre Nosotros</h4>
+                <ul>
+                    <li><a href="#">Quiénes somos</a></li>
+                    <li><a href="#">Nuestra historia</a></li>
+                    <li><a href="#">Filosofía</a></li>
+                    <li><a href="#">Nuestra visión</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-legal">
+                <h4>Información Legal</h4>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Legales</a></li>
+                    <li><a href="#">Manual de Derechos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-container-contactos">
+                <div>
+                    <h4>Encuentranos</h4>
+                    <p>Ubicación</p>
+                </div>
+                <div>
+                    <h4>Teléfono</h4>
+                    <p>+51 948352478</p>
+                </div>
+                <div>
+                    <h4>Correo Electronico</h4>
+                    <p>hahector1505@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+
+</html>

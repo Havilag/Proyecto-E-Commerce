@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <title>E Comerce</title>
+</head>
+
+<body>
+    <header class="main-header">
+
+        <nav class="navegation-left">
+            <a href="#">Collections</a>
+            <a href="#">Mens</a>
+            <a href="#">Womens</a>
+            <a href="#">Kids</a>
+        </nav>
+
+        <nav class="title-page">
+            <h2>FEAR OF GOD</h2>
+        </nav>
+
+        <nav class="navegation-right">
+            <a href="#">Search</a>
+            <a href="#">Account</a>
+            <a href="#" id="bag-btn" class="botton-bag">Bag</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-advertising">
+                <h2>THE III BASKETBALL</h2>
+                <button>SHOP</button>
+            </div>
+        </section>
+
+        <div class="container-catalog">
+
+            <nav class="filter-bar">
+                <a href="javascript:void(0)" onclick="displayProducts('men')">Men's</a>
+                <a href="javascript:void(0)" onclick="displayProducts('women')">Women's</a>
+                <a href="javascript:void(0)" onclick="displayProducts('accessories')">Accessories</a>
+            </nav>
+
+            <section id="products-container" class="product"></section>
+
+        </div>
+
+        <div class="bag-container" id="bag">
+            <h2>Shopping Bag</h2>
+            <ul id="bag-items"></ul>
+            <p class="total-product">Total: $<span id="bag-total">0</span></p>
+            <button class="buy" id="buy">Complete Purchase</button>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-image">
+                <img src="./assets/Tienda.jpg" class="footer-store">
+            </div>
+            <div class="footer-nav">
+                <h4>Sobre Nosotros</h4>
+                <ul>
+                    <li><a href="#">Quiénes somos</a></li>
+                    <li><a href="#">Nuestra historia</a></li>
+                    <li><a href="#">Filosofía</a></li>
+                    <li><a href="#">Nuestra visión</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-legal">
+                <h4>Información Legal</h4>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Legales</a></li>
+                    <li><a href="#">Manual de Derechos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-container-contactos">
+                <div>
+                    <h4>Encuentranos</h4>
+                    <p>Ubicación</p>
+                </div>
+                <div>
+                    <h4>Teléfono</h4>
+                    <p>+51 948352478</p>
+                </div>
+                <div>
+                    <h4>Correo Electronico</h4>
+                    <p>hahector1505@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

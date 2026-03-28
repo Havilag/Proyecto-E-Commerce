@@ -66,7 +66,7 @@ function updateCheckoutQty(id, cambio) {
 
 
 async function LoadCountry() {
-    const response = await fetch("./assets/CiudadesPeru.json");
+    const response = await fetch("./CiudadesPeru.json");
     const country = await response.json();
 
     country.forEach(city => {

@@ -101,7 +101,7 @@ checkoutForm.addEventListener('submit', (e) => {
 
     alert("Compra realizada");
     localStorage.removeItem("cart");
-    window.location.href="../Pagina%20Principal/index.html";
+    window.location.href="../index.html";
 });
 
 

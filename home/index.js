@@ -95,7 +95,7 @@ BotonBag.addEventListener("click", (e) => {
 const Buy = document.getElementById("buy");
 
 Buy.addEventListener("click", () => {
-    window.location.href = "../Modulo-2/checkout/checkout.html";
+    window.location.href = "./checkout.html";
 });
 
 

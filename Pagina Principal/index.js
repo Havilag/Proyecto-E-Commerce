@@ -142,6 +142,7 @@ function UpdateQTY(id, cambio) {
             cart = cart.filter(p => p.id != id);
         }
     }
+    localStorage.setItem("cart", JSON.stringify(cart));
     displayCart();
 }
 
